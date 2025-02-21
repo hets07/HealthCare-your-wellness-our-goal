@@ -1,0 +1,26 @@
+# Virtual environment
+myenv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# IDE/editor files
+.vscode/
+.ipynb_checkpoints/
+
+# Logs & temp files
+logs/
+*.log
+
+# Model & dataset files
+*.pkl
+*.model
+*.csv
+*.json
+*.db
+
+# Environment variables
+.env
