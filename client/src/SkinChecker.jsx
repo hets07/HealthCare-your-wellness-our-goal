@@ -35,7 +35,7 @@ const SkinChecker = () => {
 
     try {
       const response = await axios.post(
-        "http://127.0.0.1:8080/skin_disease",
+        "https://healthcare-your-wellness-our-goal.onrender.com/skin_disease",
         formData,
         {
           headers: { "Content-Type": "multipart/form-data" },
