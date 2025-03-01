@@ -8,6 +8,8 @@ import nodemailer from 'nodemailer'
 import doctorRoutes from './routes/doctorRoutes.js'
 
 const app = express();
+
+
 const allowedOrigins = [
     'https://healthcare-your-wellness-our-goal-4.onrender.com/'];
 const corsOptions = {
@@ -19,6 +21,11 @@ app.use(cors(corsOptions));
 
 app.use(express.json());
 app.use(cookieParser());
+app.use(express.static(path.join(__dirname, '../client/dist')));
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/dist', 'index.html'));
+});
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
