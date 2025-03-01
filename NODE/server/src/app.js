@@ -1,7 +1,6 @@
 import cookieParser from 'cookie-parser'
 import cors from 'cors'
 import express from 'express'
-import { MY_IP } from './config/envConfig.js'
 import authRoutes from './routes/authRoutes.js'
 import patientRoutes from './routes/patientRoutes.js'
 import uploadRoutes from './routes/uploadRoutes.js'
