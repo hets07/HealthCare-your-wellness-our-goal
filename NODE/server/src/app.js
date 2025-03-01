@@ -10,8 +10,7 @@ import doctorRoutes from './routes/doctorRoutes.js'
 
 const app = express();
 const allowedOrigins = [
-    'https://healthcare-your-wellness-our-goal-4.onrender.com/',
-    'http://localhost:5173',];
+    'https://healthcare-your-wellness-our-goal-4.onrender.com/'];
 const corsOptions = {
     origin: allowedOrigins,
     methods: "GET,POST,PUT,DELETE",
