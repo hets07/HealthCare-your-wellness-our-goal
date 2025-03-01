@@ -6,7 +6,13 @@ import patientRoutes from './routes/patientRoutes.js'
 import uploadRoutes from './routes/uploadRoutes.js'
 import nodemailer from 'nodemailer'
 import doctorRoutes from './routes/doctorRoutes.js'
-import path from 'path'
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+// This is necessary when using ESM (module type) instead of CommonJS.
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 
 const app = express();
 
