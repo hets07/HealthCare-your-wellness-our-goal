@@ -6,6 +6,7 @@ import patientRoutes from './routes/patientRoutes.js'
 import uploadRoutes from './routes/uploadRoutes.js'
 import nodemailer from 'nodemailer'
 import doctorRoutes from './routes/doctorRoutes.js'
+import path from 'path'
 
 const app = express();
 
