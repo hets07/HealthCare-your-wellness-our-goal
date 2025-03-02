@@ -8,7 +8,7 @@ import io from "socket.io-client";
 import "../App.css";
 import { fetchUserData } from "../Store/patient/authslice";
 
-const socket = io("http://localhost:5000", {
+const socket = io("https://healthcare-your-wellness-our-goal-4.onrender.com/", {
   path: "/meet-socket/",
   withCredentials: true,
   transports: ["websocket", "polling"]
