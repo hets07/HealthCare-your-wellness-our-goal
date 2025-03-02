@@ -29,7 +29,7 @@ const ChatPanel = () => {
 
     useEffect(() => {
         dispatch(fetchUserData())
-        const newSocket = io('http://localhost:5000', {
+        const newSocket = io('https://healthcare-your-wellness-our-goal-4.onrender.com/', {
             path: "/chat-socket/",
             withCredentials: true,
             transports: ["websocket", "polling"]
